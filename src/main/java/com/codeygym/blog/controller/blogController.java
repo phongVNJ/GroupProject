@@ -27,7 +27,7 @@ public class blogController {
     }
 
     @PostMapping(value = "/post")
-    public void publishPost(@RequestBody      Post post){
+    public void publishPost(@RequestBody Post post){
         postService.insert(post);
 
     }
